@@ -2,4 +2,9 @@
 
 coding，coding，and coding
 
-每天一道题：每天进步一点点
+每日一道题
+天天进步一点点
+
+### LeetCode
+292， Nim Game
+290， Word Pattern
