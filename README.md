@@ -3,18 +3,20 @@
 每日一道题 && 天天进步一点点   
 
 ### LeetCode   
+
  - - - -   
-| *Easy* |   
+| ***Easy*** |   
 | - - -    
 |-> 7, Reverse Integer   
 |-> 290， Word Pattern    
 |-> 292， Nim Game      
 |   
 |- - - - -   
-| Medium |   
+| ***Medium*** |   
 | - - - -    
 |   
 |   
 | - - - -   
-| Hard |   
- - - - -    
+| ***Hard*** |   
+ - - - -   
+
