@@ -1,5 +1,3 @@
-package leetcode;
-
 /**
  * <p>
  * 1. 在str后加上空格，使str变为 ”单词+空格“ 的组合
