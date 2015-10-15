@@ -1,5 +1,3 @@
-package leetcode;
-
 /**
  * <p>
  * 1. 获取整数的符号
