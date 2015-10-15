@@ -7,6 +7,7 @@
 \- - - - - - -    
 | ***Easy*** |   
 | - - - - - -    
+|-> 6, ZigZag Conversion
 |-> 7, Reverse Integer   
 |-> 290， Word Pattern    
 |-> 292， Nim Game      
