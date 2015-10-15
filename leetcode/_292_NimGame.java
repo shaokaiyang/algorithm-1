@@ -1,5 +1,3 @@
-package leetcode;
-
 /**
  * <p>
  * 数量为1-3：先手赢
