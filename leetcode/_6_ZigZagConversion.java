@@ -1,5 +1,3 @@
-package leetcode;
-
 /**
  * <p>
  * 题目意思是这样的
