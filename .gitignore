@@ -1,2 +1,4 @@
-# idea setting
-.idea/*
+*
+
+# leetcode
+!/leetcode/*.java
