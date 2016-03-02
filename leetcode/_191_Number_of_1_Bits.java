@@ -18,9 +18,6 @@ public class _191_Number_of_1_Bits {
         while (n != 0) {
             sum += n & 1;
             n >>>= 1;
-//            n &= (n - 1);
-//            n >>>= 1;
-//            sum++;
         }
 
         return sum;
