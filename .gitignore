@@ -1,4 +1,15 @@
-*
+*.class
 
-# leetcode
-!/leetcode/*.java
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# setting files
+.*
+
+!.gitignore
+
