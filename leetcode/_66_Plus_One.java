@@ -1,5 +1,5 @@
 /**
- * Created by boy on 16-3-4.
+ * @author sunxiaoyang
  */
 public class _66_Plus_One {
     public int[] plusOne(int[] digits) {
