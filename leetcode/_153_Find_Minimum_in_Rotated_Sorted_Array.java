@@ -1,5 +1,5 @@
 /**
- * Created by boy on 16-3-3.
+ * @author sunxiaoyang
  */
 public class _153_Find_Minimum_in_Rotated_Sorted_Array {
 
