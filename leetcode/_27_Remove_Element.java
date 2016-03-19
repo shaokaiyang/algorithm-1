@@ -20,9 +20,5 @@ public class _27_Remove_Element {
         _27_Remove_Element a = new _27_Remove_Element();
         int[] in = {2, 2, 3};
         System.out.println(a.removeElement(in, 2));
-        System.out.println(in.toString());
-        for (int i : in) {
-            System.out.println(i);
-        }
     }
 }
