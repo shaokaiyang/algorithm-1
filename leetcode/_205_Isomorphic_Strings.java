@@ -12,13 +12,13 @@ public class _205_Isomorphic_Strings {
         if (s == null || t == null) return false;
         if (s.length() != t.length()) return false;
 
-        HashMap<Character, Set<Integer>> sm = new HashMap<Character, Set<Integer>>();
-        HashMap<Character, Set<Integer>> tm = new HashMap<Character, Set<Integer>>();
-        char[] sa = s.toCharArray();
-        char[] ta = t.toCharArray();
-        int len = s.length();
+        return getPoSet(s).equals(getPoSet(t));
+    }
 
-        for (int i = 0; i < len; i++) {
+    Set<Set<Integer>> getPoSet(String val) {
+        HashMap<Character, Set<Integer>> sm = new HashMap<Character, Set<Integer>>();
+        char[] sa = val.toCharArray();
+        for (int i = 0; i < sa.length; i++) {
             Set<Integer> temp = sm.get(sa[i]);
             if (temp == null) {
                 HashSet<Integer> tx = new HashSet<Integer>();
@@ -27,29 +27,13 @@ public class _205_Isomorphic_Strings {
             } else {
                 temp.add(i);
             }
-
-            temp = tm.get(ta[i]);
-            if (temp == null) {
-                HashSet<Integer> tx = new HashSet<Integer>();
-                tx.add(i);
-                tm.put(ta[i], tx);
-            } else {
-                temp.add(i);
-            }
         }
-
         Set<Set<Integer>> sr = new HashSet<Set<Integer>>();
-        Set<Set<Integer>> tr = new HashSet<Set<Integer>>();
         for (Map.Entry<Character, Set<Integer>> i : sm.entrySet()) {
             sr.add(i.getValue());
         }
-        for (Map.Entry<Character, Set<Integer>> i : tm.entrySet()) {
-            tr.add(i.getValue());
-        }
-
-        return sr.equals(tr);
+        return sr;
     }
-
 
     public static void main(String[] args) {
         _205_Isomorphic_Strings a = new _205_Isomorphic_Strings();
