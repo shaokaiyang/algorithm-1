@@ -6,7 +6,7 @@ import java.util.Set;
  */
 public class _217_Contains_Duplicate {
     public boolean containsDuplicate(int[] nums) {
-        Set<Integer> s = new HashSet<Integer>();
+        Set<Integer> s = new HashSet<>();
         for (int i : nums) {
             s.add(i);
         }
