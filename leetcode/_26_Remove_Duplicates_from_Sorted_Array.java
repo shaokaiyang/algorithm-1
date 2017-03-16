@@ -5,7 +5,8 @@
  * @author sunxiaoyang
  */
 public class _26_Remove_Duplicates_from_Sorted_Array {
-    public int removeDuplicates(int[] nums) {
+    // 2016-03-20
+    public int removeDuplicates_1(int[] nums) {
         int count = 0;
         for (int i = 1; i < nums.length - count; i++) {
             if (nums[i] == nums[i - 1]) {
@@ -17,6 +18,20 @@ public class _26_Remove_Duplicates_from_Sorted_Array {
             }
         }
         return nums.length - count;
+    }
+
+    // 2017-03-16 two pointer
+    public int removeDuplicates(int[] nums) {
+        if (nums.length <= 1) return nums.length;
+
+        int first = 0, last = 1;
+        for (; last < nums.length; last++) {
+            if (nums[first] != nums[last]) {
+                first++;
+                nums[first] = nums[last];
+            }
+        }
+        return first + 1;
     }
 
     public static void main(String[] args) {
