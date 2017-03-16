@@ -1,6 +1,6 @@
 # Algorithm
 
-##每日一题 && 天天进步一点点   
+## 每日一题 && 天天进步一点点   
 
 题目来于 LeetCode，剑指offer，Coding Interview，ZOJ，POJ 等平台。
 
