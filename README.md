@@ -1,13 +1,20 @@
 # Algorithm
 
-##每日一道题 && 天天进步一点点   
+##每日一题 && 天天进步一点点   
 
-学习计算机最基本的素质就是扎实的基本功 —— 数据结构和算法。只有熟练掌握基础知识，才有可能在计算机界做得更好，走得更远。
+题目来于 LeetCode，剑指offer，Coding Interview，ZOJ，POJ 等平台。
 
-本仓库是从 LeetCode，ZOJ，POJ 等平台上的基础题目进行练习，希望大家对代码加以指正和提议！
+欢迎Coders对代码加以指正和提议！
 
 ---
 
 ### 常见问题总结
 1. 两整数求平均值      
 `average = min + (max - min) / 2`       *防止两整数的和越界*    
+
+### 编辑器
+1. IDEA
+> 下载代码git clone -> 打开idea -> 选择打开项目 -> 选择algorithm并进行环境配置  
+ 
+2. Atom 或 Sublime text
+> 下载代码git clone -> 打开编辑器 -> 加入项目 -> 选择algorithm

@@ -13,3 +13,7 @@
 
 !.gitignore
 
+# idea setting files
+/.idea/
+/out/
+/algorithm.iml
