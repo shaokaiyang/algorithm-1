@@ -5,7 +5,20 @@
  * @author sunxiaoyang
  */
 public class _21_Merge_Two_Sorted_Lists {
-    public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
+    /**
+     * Definition for singly-linked list.
+     */
+    public static class ListNode {
+        int val;
+        ListNode next;
+
+        ListNode(int x) {
+            val = x;
+        }
+    }
+
+    // 2016-03-20
+    public ListNode mergeTwoLists_1(ListNode l1, ListNode l2) {
         ListNode l1s = l1, l1sf = new ListNode(0);
         ListNode l2s = l2, l2sf = new ListNode(0);
         l1sf.next = l1;
@@ -37,23 +50,41 @@ public class _21_Merge_Two_Sorted_Lists {
         return l1;
     }
 
-    /**
-     * Definition for singly-linked list.
-     */
-    public static class ListNode {
-        int val;
-        ListNode next;
+    // 2017-03-18
+    public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
+        if (l1 == null) return l2;
+        if (l2 == null) return l1;
 
-        ListNode(int x) {
-            val = x;
+        ListNode head, tmp;
+        head = tmp = new ListNode(0);
+        while (l1 != null && l2 != null) {
+            if (l1.val > l2.val) {
+                tmp.next = l2;
+                tmp = l2;
+                l2 = l2.next;
+            } else {
+                tmp.next = l1;
+                tmp = l1;
+                l1 = l1.next;
+            }
         }
+        if (l1 != null) tmp.next = l1;
+        if (l2 != null) tmp.next = l2;
+
+        return head.next;
     }
+
 
     public static void main(String[] args) {
         _21_Merge_Two_Sorted_Lists a = new _21_Merge_Two_Sorted_Lists();
         ListNode l1 = new ListNode(2);
         ListNode l2 = new ListNode(1);
-        a.mergeTwoLists(l1, l2);
-        System.out.println(l1.val);
+        ListNode head = a.mergeTwoLists(l1, l2);
+
+        while (head != null) {
+            System.out.println(head.val);
+            head = head.next;
+        }
+
     }
 }
