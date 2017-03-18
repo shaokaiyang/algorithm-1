@@ -13,13 +13,13 @@
 `average = min + (max - min) / 2`       *防止两整数的和越界*    
 
 2. 两整数交换      
-`i=i+j; j=i-j; i=i-j`       *需注意i+j不能超出整数最大值*
-`i^=j; j^=i; i^=j`       *需注意i+j不能超出整数最大值*
+> `i=i+j; j=i-j; i=i-j`       *需注意i+j不能超出整数最大值*    
+> `i^=j; j^=i; i^=j`       *需注意i+j不能超出整数最大值*    
 
 3. 链表节点交换      
 >方式一： 修改next指针的值进行节点的交换      
->方式一： **修改val字段的值** 等价节点交换      
->leetcode: 24. Swap Nodes in Pairs
+>方式二： **修改val字段的值** 等价节点交换      
+>练习： leetcode: 24. Swap Nodes in Pairs
 
 ### 编辑器
 1. IDEA
