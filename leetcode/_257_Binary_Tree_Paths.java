@@ -49,8 +49,8 @@ public class _257_Binary_Tree_Paths {
             return result;
         }
 
-        result.addAll(binaryTreePaths(root.left));
-        result.addAll(binaryTreePaths(root.right));
+        if (root.left != null) result.addAll(binaryTreePaths(root.left));
+        if (root.right != null) result.addAll(binaryTreePaths(root.right));
         for (int i = 0; i < result.size(); i++) {
             result.set(i, new String(root.val + "->" + result.get(i)));
         }
