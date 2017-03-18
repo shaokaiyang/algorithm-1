@@ -20,7 +20,8 @@
 3. 链表节点交换      
     1. 修改next指针的值进行节点的交换      
     2. *修改val字段的值* 等价节点交换      
->练习： leetcode: 24. Swap Nodes in Pairs
+>练习： leetcode: 24. Swap Nodes in Pairs   
+>练习： leetcode: 237. Delete Node in a Linked List
 
 ### 编辑器
 1. IDEA
