@@ -14,7 +14,7 @@
 
 ### 编辑器
 1. IDEA
-> 下载代码git clone -> 打开idea -> 选择打开项目 -> 选择algorithm并进行环境配置  
+> 下载代码git clone -> 打开idea -> 选择import project -> 选择algorithm并进行环境配置  
  
 2. Atom 或 Sublime text
 > 下载代码git clone -> 打开编辑器 -> 加入项目 -> 选择algorithm
