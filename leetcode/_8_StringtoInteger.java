@@ -1,3 +1,6 @@
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 /**
  * <p>
  * 此题目难
@@ -14,7 +17,8 @@
 
 public class _8_StringtoInteger {
 
-    public int myAtoi(String str) {
+    // 2015-10-15
+    public int myAtoi_1(String str) {
         str = str.trim();
         if (str.length() < 1) {
             return 0;
@@ -44,9 +48,44 @@ public class _8_StringtoInteger {
 
     }
 
+    // 2017-03-17
+    public int myAtoi(String str) {
+        // null
+        if (str == null) return 0;
+
+        // remove blank characters at two sides
+        str = str.trim();
+
+        // first valid substring
+        String regex = "^[-+]?\\d+";
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(str);
+        if (matcher.find())
+            str = matcher.group();
+        else
+            return 0;
+
+        // valid substring to integer
+        double result = 0;
+        char fc = str.charAt(0);
+        int start = (fc == '-' || fc == '+') ? 1 : 0;
+        int flag = (fc == '-') ? -1 : 1;
+        for (int i = start; i < str.length(); i++) {
+            result = result * 10 + (str.charAt(i) - '0');
+        }
+        result *= flag;
+
+        if (result < Integer.MIN_VALUE)
+            return Integer.MIN_VALUE;
+        else if (result > Integer.MAX_VALUE)
+            return Integer.MAX_VALUE;
+        else
+            return (int) result;
+    }
+
     public static void main(String[] args) {
         _8_StringtoInteger a = new _8_StringtoInteger();
-        System.out.println(a.myAtoi("2147483648"));
+        System.out.println(a.myAtoi("+-2"));
     }
 
 }

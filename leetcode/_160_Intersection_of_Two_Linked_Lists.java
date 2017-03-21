@@ -5,6 +5,19 @@
  * @author sunxiaoyang
  */
 public class _160_Intersection_of_Two_Linked_Lists {
+    /**
+     * Definition for singly-linked list.
+     */
+    class ListNode {
+        int val;
+        ListNode next;
+
+        ListNode(int x) {
+            val = x;
+            next = null;
+        }
+    }
+
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
         // two lists are null
         if (headA == null || headB == null) {
@@ -46,22 +59,6 @@ public class _160_Intersection_of_Two_Linked_Lists {
 
         return null;
     }
-
-    public static void main(String[] args) {
-
-    }
 }
 
-/**
- * Definition for singly-linked list.
- */
-class ListNode {
-    int val;
-    ListNode next;
-
-    ListNode(int x) {
-        val = x;
-        next = null;
-    }
-}
 
